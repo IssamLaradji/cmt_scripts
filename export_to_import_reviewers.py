@@ -1,3 +1,9 @@
+"""
+Step 1: export reviewers from CMT's "Reviewer -> Manage Invites" into txt file "ReviewerInvites.txt"
+Step 2: modify the txt file using the script below
+Step 3: upload the modified txt file into CMT's "Reviewer -> Import" to send out invites
+"""
+
 import pandas as pd 
 
 # Import exported data from Excel
@@ -22,3 +28,7 @@ df.insert(1, "Middle Initial", "")
 
 # save as tab delimited csv file using utf encoding and tab separator
 df.to_csv("ReviewerInvites.csv", sep="\t", encoding="UTF-8", index=False)
+
+
+
+
